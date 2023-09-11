@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #containerGridID {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    .gridDivClass {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .gridDivClass img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    </style>
 </head>
 <body>
-    <div id="compDiv"></div>
+    <!-- <div id="compDiv"></div> -->
     |<script src="main.js"></script>
 </body>
 </html>
