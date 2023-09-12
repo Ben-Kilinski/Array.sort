@@ -46,37 +46,52 @@
 
 
 //task 7
-function task7(){
-    let companiesArray = [" Microsoft", " Apple", " Xiomi", " Intel", " Nvidia", " Asus", " Waze", " Samsung", " Philips", " Amazon"]
-    document.body.innerHTML = `<h2>${companiesArray}</h2>`
-}
-task7();
+// function task7(){
+//     let companiesArray = [
+//         "Microsoft", " Apple", " Xiomi", " Intel", " Nvidia", " Asus", " Waze", " Samsung", " Philips", " Amazon", "Lenovo", "IBM"
+//     ]
+
+//     let linksArray =[
+//         "https://www.microsoft.com/he-il/", "https://www.apple.com/", "https://www.mi-il.co.il/", "https://www.intel.com/",
+//         "https://www.nvidia.com/", "https://www.asus.com/", "https://www.waze.com/", "https://www.samsung.com/", 
+//         "https://www.philips.co.il/", "https://www.amazon.com/", "https://www.lenovo.com/", "https://www.ibm.com/"
+//     ]
+
+//     let picArray = [
+//         "https://c1.wallpaperflare.com/preview/12/550/555/building-cologne-facade-architecture.jpg",
+//         "https://www.usgbc.org/sites/default/files/2023-06/Photo%20credit_carles-rabada-unsplash.jpg",
+//         "https://www.mobileworldlive.com/wp-content/uploads/2022/08/Xiaomi-HQ.png",
+//         "https://upload.wikimedia.org/wikipedia/commons/1/13/2200_Mission_College_Boulevard.jpg",
+//         "https://s3.amazonaws.com/cms.ipressroom.com/219/files/albumcovers/5e1b4666-d7b4-459b-a66a-55af0c1c4de6_thmb.jpg",
+//         "https://www.taipeitimes.com/images/2022/05/12/p12-220512-609.jpg",
+//         "https://static.timesofisrael.com/www/uploads/2018/04/waze-1024x640.jpg",
+//         "https://i0.wp.com/bennyselfpublishing.com/wp-content/uploads/2023/05/samsung-networth-company.jpg",
+//         "https://www.medicaldevice-network.com/wp-content/uploads/sites/23/2022/01/Philips_Headquarter_Amsterdam_the_Netherland-ALI-global.jpg",
+//         "https://media.architecturaldigest.com/photos/601af60bec6404d96c7d30ab/16:9/w_2560%2Cc_limit/02.jpg",
+//         "https://www.bdcnetwork.com/sites/default/files/Lenovo%20Headquarters.jpg",
+//         "https://m-y-s.com/Pictuers/01_20220223120540.662.jpg?quality=60"    
+//     ]
+
+//     let citiesArray = [
+//         "Redmond, Washington, EUA", "Cupertino, Califórnia, EUA", "	Pequim, China", "Santa Clara, Califórnia, EUA", 
+//         "Santa Clara, Califórnia, EUA", "Beitou, Taipé, Taiwan", "Ra'anana, Israel", "Suwon, South Korea", 
+//         "Amsterdam, Netherlands", "Seattle, Washington, EUA", "Quarry Bay, Hong Kong", "Armonk, New York, EUA"
+//     ]
+
+//     let wikiArray = [
+//         "https://pt.wikipedia.org/wiki/Microsoft", "https://pt.wikipedia.org/wiki/Apple", "https://pt.wikipedia.org/wiki/Xiaomi",
+//         "https://pt.wikipedia.org/wiki/Intel", "https://en.wikipedia.org/wiki/Nvidia", "https://pt.wikipedia.org/wiki/Asus", 
+//         "https://en.wikipedia.org/wiki/Waze", "https://pt.wikipedia.org/wiki/Grupo_Samsung", "https://pt.wikipedia.org/wiki/Philips", 
+//         "https://pt.wikipedia.org/wiki/Amazon", "https://pt.wikipedia.org/wiki/Lenovo", "https://en.wikipedia.org/wiki/IBM"
+//     ]
 
 
-
-const picArray = [
-    "https://admin.ultimatodobacon.com/wp-content/uploads/2020/06/Saga-do-Clone-2-001.jpg",
-    "https://www.planocritico.com/wp-content/uploads/2018/05/24-Homem-Aranha-Saga-do-Clone-1.jpg",
-    "https://admin.ultimatodobacon.com/wp-content/uploads/2020/06/Saga-do-Clone-2-005.jpg",
-    "https://www.planocritico.com/wp-content/uploads/2014/10/07-Homem-Aranha-Anos-Perdidos.jpg",
-    "https://poltronanerd.com.br/wp-content/uploads/2017/01/poltrona-aranha-escarlate.jpg",
-    "https://static.tvtropes.org/pmwiki/pub/images/peter_parker_the_spectacular_spider_man_1976_226.jpg",
-    "https://www.oklahoman.com/gcdn/authoring/2014/11/13/NOKL/ghnewsok-OK-5366421-6b5ba8b7.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp",
-    "https://images.comicbooktreasury.com/wp-content/uploads/2020/11/Spider-Man-The-Complete-Clone-Saga-Epic-Book-2-402x620.jpg",
-    "https://www.syfy.com/sites/syfy/files/styles/scale_640_no_scale/public/2021/11/brsm2022001004_col.jpg",
-    "https://www.chasingamazingblog.com/wp-content/uploads/Exile-Returns-01.jpg",
-    "https://www.chasingamazingblog.com/wp-content/uploads/Exile-Returns-01.jpg",
-    "https://i0.wp.com/theartacademy.net/wp/wp-content/uploads/2019/04/john-romita-jr-spiderman.jpg?ssl=1"
-]
-
-document.body.innerHTML = `<div id="containerGridID"></div>`
-let containerGrid = document.getElementById("containerGridID")
-
-for (let i=0; i<12; i++){
-        let image = document.createElement("img")
-        image.src = picArray[i]
-        let gridDiv = document.createElement("div")
-        gridDiv.className = "gridDivClass"
-        gridDiv.appendChild(image)
-        containerGrid.appendChild(gridDiv)
-    }
+//     for (let i=0; i<12; i++){
+//             document.getElementById("parentDiv").innerHTML += `<div class="childDiv">
+//                                                                     <a href="${wikiArray[i]}"><img src="${picArray[i]}"></a>
+//                                                                     <p>${citiesArray[i]}</p>
+//                                                                     <a href="${linksArray[i]}">${companiesArray[i]}</a>
+//                                                                 </div>`
+//     }
+// }
+// task7()
